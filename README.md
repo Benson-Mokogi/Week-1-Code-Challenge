@@ -1,8 +1,8 @@
 ## Student Grade Generator
-1. create a function called studentGradeCalculator with a parameter studentMarks.
+1. Create a function called studentGradeCalculator with a parameter studentMarks.
 2. Check that valid marks are entered and print/log "Invalid marks" for values greater than 100 or less than zero.
 3. Use if ... else statement for valid studentMarks and log the grade of the student.
-4. 
+
 ## Speed Detector
 1. Create a function called carSpeed with a speed parameter.
 2. Print/log "Ok" if speed is less or equal to 70 km/h.
