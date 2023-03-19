@@ -1,6 +1,8 @@
 
 //A > 79, B > 60 to 79, C > 59 to 49, D > 40 to 49, E > less 40.
-function studentGradeCalculator(studentMarks){
+function studentGradeCalculator(studentMarks=0){
+    const checkNumber = isNaN(studentMarks);
+    if (checkNumber === false){
     if (studentMarks > 100 || studentMarks < 0){
         console.log ("Invalid marks");
         return ("Invalid marks");
@@ -9,15 +11,15 @@ function studentGradeCalculator(studentMarks){
         console.log("E");
         return "E";
     }
-    else if (studentMarks >=40 && studentMarks <= 49){
+    else if (studentMarks >= 40 && studentMarks < 50){
         console.log("D");
         return "D";
     }
-    else if (studentMarks >=50 && studentMarks <= 59){
+    else if (studentMarks >=50 && studentMarks < 60){
         console.log("C");
         return "C";
     }
-    else if (studentMarks >=60 && studentMarks <= 79){
+    else if (studentMarks >=60 && studentMarks < 80){
         console.log("B");
         return "B";
     }else (studentMarks > 79);{
@@ -25,6 +27,10 @@ function studentGradeCalculator(studentMarks){
         return "A";
         
     }
+    }
+    else {
+        console.log("Not a number");
+    }
 
 }
-studentGradeCalculator(-1)
+studentGradeCalculator("d")
