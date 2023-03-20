@@ -14,4 +14,4 @@ function carSpeed(speed){
         return token;
     }
 }
-carSpeed(161)
+carSpeed(speed = prompt("Enter vehicle speed: "));
