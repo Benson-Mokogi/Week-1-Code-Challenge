@@ -1,11 +1,11 @@
 # Student Grade Generator
 This program is designed to calculate a student's grade based on their marks in a given subject. The grades are assigned as follows:
 
-A: 80 - 100
-B: 60 - 79
-C: 50 - 59
-D: 40 - 49
-E: 0 - 39
+    A: 80 - 100
+    B: 60 - 79
+    C: 50 - 59
+    D: 40 - 49
+    E: 0 - 39
 
 ## Use
 To use this program, simply run the studentGradeCalculator function and enter the student's marks when prompted. The function will return the student's grade.
@@ -43,26 +43,26 @@ Up to 24,000	10%
 24,001 to 32,333	25%
 32,334 and above	30%
 
-    It calculates the NHIF based on the gross pay using the following table:
+It calculates the NHIF based on the gross pay using the following table:
 
 # Gross Pay (Ksh)	Deduction (Ksh)
-Up to 5,999	150
-6,000 to 7,999	300
-8,000 to 11,999	400
-12,000 to 14,999	500
-15,000 to 19,999	600
-20,000 to 24,999	750
-25,000 to 29,999	850
-30,000 to 34,999	900
-35,000 to 39,999	950
-40,000 to 44,999	1,000
-45,000 to 49,999	1,100
-50,000 to 59,999	1,200
-60,000 to 69,999	1,300
-70,000 to 79,999	1,400
-80,000 to 89,999	1,500
-90,000 to 99,999	1,600
-100,000 and above	1,700
+    Up to 5,999	150
+    6,000 to 7,999	300
+    8,000 to 11,999	400
+    12,000 to 14,999	500
+    15,000 to 19,999	600
+    20,000 to 24,999	750
+    25,000 to 29,999	850
+    30,000 to 34,999	900
+    35,000 to 39,999	950
+    40,000 to 44,999	1,000
+    45,000 to 49,999	1,100
+    50,000 to 59,999	1,200
+    60,000 to 69,999	1,300
+    70,000 to 79,999	1,400
+    80,000 to 89,999	1,500
+    90,000 to 99,999	1,600
+    100,000 and above	1,700
 
 It calculates the NSSF based on the gross pay at a rate of 6%.
 It calculates the net salary by subtracting the PAYE, NHIF, and NSSF from the gross pay.
