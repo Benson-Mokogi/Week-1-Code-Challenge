@@ -1,43 +1,42 @@
-## Student Grade Generator
+# Student Grade Generator
 This program is designed to calculate a student's grade based on their marks in a given subject. The grades are assigned as follows:
 
-    A: 80 - 100
-    B: 60 - 79
-    C: 50 - 59
-    D: 40 - 49
-    E: 0 - 39
+A: 80 - 100
+B: 60 - 79
+C: 50 - 59
+D: 40 - 49
+E: 0 - 39
 
-# Use
+## Use
 To use this program, simply run the studentGradeCalculator function and enter the student's marks when prompted. The function will return the student's grade.
 The studentGradeCalculator function takes one argument, studentMarks, which represents the student's marks in the subject. If the studentMarks argument is not a number, the program will return "Not a number". If the studentMarks argument is outside the range of 0 - 100, the program will return "Invalid marks". If the studentMarks argument is within the range of 0 - 100, the program will return the student's grade based on the grade ranges mentioned above.
 
-## Speed Detector
+# Speed Detector
 1. The carSpeed() function is a program that checks the speed of a car and determines if a fine is applicable, as well as the number of points to be deducted from the driver's license.
 Usage
 
-# Use
+## Use
 To use the function, call carSpeed() and pass in the car's speed as an argument. The function returns one of three values:
 
 If the speed is less than or equal to 70, the function will return "Ok" indicating that the speed is within the limit.
 If the speed is greater than 70, the function will return the number of points to be deducted from the driver's license, as well as the message "Fine is applicable".
 If the number of points to be deducted is greater than 12, the function will also print the message "License suspended".
  
-## Net Salary Calculator
+# Net Salary Calculator
 
 
 This is a salary calculator that calculates an employee's net salary after deductions for PAYE, NHIF, and NSSF.
 How to Use
 
-    Run the code in a JavaScript environment.
-    When prompted, enter your monthly gross pay.
-    The code will calculate your PAYE, NHIF, NSSF, and net salary and display them in the console.
+Run the code in a JavaScript environment.
+When prompted, enter your monthly gross pay.
+The code will calculate your PAYE, NHIF, NSSF, and net salary and display them in the console.
 
-# Functionality
+## Use
 
 The code works as follows:
-
-    It takes in the employee's monthly gross pay as input.
-    It calculates the PAYE based on the gross pay using the following table:
+It takes in the employee's monthly gross pay as input.
+It calculates the PAYE based on the gross pay using the following table:
 
 Gross Pay (Ksh)	Deduction (Ksh)
 Up to 24,000	10%
@@ -65,5 +64,5 @@ Up to 5,999	150
 90,000 to 99,999	1,600
 100,000 and above	1,700
 
-    It calculates the NSSF based on the gross pay at a rate of 6%.
-    It calculates the net salary by subtracting the PAYE, NHIF, and NSSF from the gross pay.
+It calculates the NSSF based on the gross pay at a rate of 6%.
+It calculates the net salary by subtracting the PAYE, NHIF, and NSSF from the gross pay.
