@@ -1,6 +1,15 @@
 
 //A > 79, B > 60 to 79, C > 59 to 49, D > 40 to 49, E > less 40.
+
+// Get the button element from the html document 
+const btn1 = document.getElementById("btn1");
+
+// Assign a value from the tbuser element ID
+const studentMarks = document.getElementById("tbuser").value;
+
+// create a function that calculates the correct grade for given marks.
 function studentGradeCalculator(studentMarks){
+    
     const checkNumber = isNaN(studentMarks);
     if (checkNumber === false){
     if (studentMarks > 100 || studentMarks < 0){
@@ -30,7 +39,9 @@ function studentGradeCalculator(studentMarks){
     }
     else {
         console.log("Not a number");
+        return "Not a number";
     }
 
 }
-studentGradeCalculator(studentMarks = prompt("Enter the subject marks: " ))
+// Pass the output from the function to be displayed in html.
+document.getElementById("output1").innerHTML = studentGradeCalculator();
