@@ -1,4 +1,12 @@
-function newSalaryCalculator(grossPay){
+// We pull an element from the HTML document whose ID is btn3 and store it in a variable.
+const btn3 = document.getElementById("btn3");
+
+//We listen to the click events on btn3 invoke the main fucntion.
+btn3.addEventListener("click", newSalaryCalculator);
+
+// Our function for calculating the net pay begins here.
+function newSalaryCalculator(){
+    const grossPay = document.getElementById("salaryid").value;
     //paye calculator
     if (grossPay <= 24000){
         PAYE = grossPay*10/100;
@@ -62,5 +70,7 @@ function newSalaryCalculator(grossPay){
     //New pay
     const netPay = grossPay - NSSF - deduction - PAYE;
     console.log(`Net Salary = ${netPay}`);
+
+    // The innerHTML method updates the contents of element whose ID is output4
+    document.getElementById("output4").innerHTML = netPay;
 }
-newSalaryCalculator(grossPay = prompt("Enter your monthly salary: "))

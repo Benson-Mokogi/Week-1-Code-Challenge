@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculators</title>
     <link rel = "stylesheet" href="index.css"/>
-    <script src="Student-Grade-Generator.js"></script>
+    
+
 </head>
 <body>
     <p>
@@ -17,8 +18,9 @@
             </tr>
             <tr>
                 <td>
-                    <label for = "tbuser">Marks:</label>
-                    <input type="number" id="tbuser" placeholder="Enter marks" >
+                    
+                    <label for = "gradeid">Marks:</label>
+                    <input type="text" id="gradeid" placeholder="Enter marks"/>
                     <button id="btn1">Calculate</button>
                 </td>
                 
@@ -37,9 +39,9 @@
         </tr>
         <tr>
             <td>
-                <label for = "speed">Speed:</label>
-                <input type="text" id="speed" placeholder="Enter speed" >
-                <button onclick="">Calculate</button>
+                <label for = "speedid">Speed:</label>
+                <input type="text" id="speedid" placeholder="Enter speed" >
+                <button id="btn2">Calculate</button>
             </td>
             
         </tr>
@@ -61,9 +63,9 @@
         </tr>
         <tr>
             <td>
-                <label for = "salary">Gross pay:</label>
-                    <input type="text" id="salary" placeholder="Enter gross pay" >
-                    <input type = "button" value ="Calculate">
+                <label for = "salaryid">Gross pay:</label>
+                    <input type="text" id="salaryid" placeholder="Enter gross pay" >
+                    <button id="btn3">Calculate</button>
             </td>
             
         </tr>
@@ -73,6 +75,8 @@
         </tr>
        </table>
     </p>
-    
+    <script src="Student-Grade-Generator.js"></script>
+    <script src="Speed-Detector.js"></script>
+    <script src="New-Salary-Calculator.js"></script>
 </body>
 </html>

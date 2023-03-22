@@ -1,47 +1,47 @@
-
-//A > 79, B > 60 to 79, C > 59 to 49, D > 40 to 49, E > less 40.
-
-// Get the button element from the html document 
 const btn1 = document.getElementById("btn1");
 
-// Assign a value from the tbuser element ID
-const studentMarks = document.getElementById("tbuser").value;
+//A function is going to be invoked
+btn1.addEventListener("click", studentGradeCalculator);
 
 // create a function that calculates the correct grade for given marks.
-function studentGradeCalculator(studentMarks){
+function studentGradeCalculator(){
+    const studentMarks = document.getElementById("gradeid").value;
+    let marks;
     
     const checkNumber = isNaN(studentMarks);
     if (checkNumber === false){
-    if (studentMarks > 100 || studentMarks < 0){
-        console.log ("Invalid marks");
-        return ("Invalid marks");
-    }
-    else if (studentMarks >=0 && studentMarks < 40){
-        console.log("E");
-        return "E";
-    }
-    else if (studentMarks >= 40 && studentMarks < 50){
-        console.log("D");
-        return "D";
-    }
-    else if (studentMarks >=50 && studentMarks < 60){
-        console.log("C");
-        return "C";
-    }
-    else if (studentMarks >=60 && studentMarks < 80){
-        console.log("B");
-        return "B";
-    }else (studentMarks > 79);{
-        console.log("A")
-        return "A";
-        
-    }
+        if (studentMarks > 100 || studentMarks < 0){
+            console.log ("Invalid marks");
+            marks = ("Invalid marks");
+        }
+        else if (studentMarks >=0 && studentMarks < 40){
+            console.log("E");
+            marks = "E";
+        }
+        else if (studentMarks >= 40 && studentMarks < 50){
+            console.log("D");
+            marks = "D";
+        }
+        else if (studentMarks >=50 && studentMarks < 60){
+            console.log("C");
+            marks = "C";
+        }
+        else if (studentMarks >=60 && studentMarks < 80){
+            console.log("B");
+            marks = "B";
+        }
+        else if (studentMarks > 79){
+            console.log("A");
+            marks = "A";
+            
+        }
     }
     else {
         console.log("Not a number");
-        return "Not a number";
+        marks = "Not a number";
     }
+   
+    // Pass the output from the function to be displayed in html.
+    document.getElementById("output1").innerHTML = marks;
 
 }
-// Pass the output from the function to be displayed in html.
-document.getElementById("output1").innerHTML = studentGradeCalculator();
